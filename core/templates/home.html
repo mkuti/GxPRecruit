@@ -1,0 +1,91 @@
+{% extends 'base.html'%}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+<section id="home-img">
+    <div class="slogan">
+        <h1 class="slogan-text light-text">Experts in recruiting for the Life Science industry.</h1>
+    </div>
+    
+</section>      
+
+
+<section class="job_search">
+    <form method="get">
+       <div class="text-left filters">
+           <h5 class="">Filter by Location</h5>
+           {{ filter.form.job_location|as_crispy_field }}
+       </div>
+       <div>
+           <button type="submit" class="btn btn-lg bg-blue dark-text my-1">Filter</button>
+        </div>
+    </form>
+</section>
+
+
+<section class="container-fluid">
+    
+    <div class="row justify-content-center no-gutters mx-3" id="jobs">
+
+    
+        {% for job in filter.qs %}
+        {% if forloop.counter|divisibleby:2 %}
+        <div class="col-12 col-sm-8 col-md-6 col-lg-4 col-xl-3 jobs_container white_box dark-text">
+            <h3 class="job_header m-3"><u>{{ job.title}}</u></h3>
+            <div class="job_specifics m-3">
+                <div class="description text-justify m-2">
+                    <p>
+                        {{ job.description }}
+                    </p>
+                </div>
+                <div class="location text-uppercase font-weight-bold m-3">
+                    <i class="bi bi-geo-fill mr-4"></i>
+                    <span>{{ job.job_location }}</span>
+                </div>
+                <div class="contract text-uppercase font-weight-bold m-3">
+                    <i class="bi bi-calendar-check mr-4"></i>
+                    <span>{{ job.job_contract }}</span>
+                </div>
+                <div class="schedule text-uppercase font-weight-bold m-3">
+                    <i class="bi bi-clock-history mr-4"></i>
+                    <span>{{ job.job_schedule }}</span>
+                </div>
+            </div>
+            <div class="text-center m-5">
+                <a href="" class="popup_btn bg-blue dark-text text-uppercase">Find out More</a>
+            </div>
+        </div>
+        {% else %}
+        <div class="col-12 col-sm-8 col-md-6 col-lg-4 col-xl-3 jobs_container dark_box bg-dark light-text">
+            <h3 class="job_header m-3"><u>{{ job.title}}</u></h3>
+            <div class="job_specifics m-3">
+                <div class="description text-justify m-2">
+                    <p>
+                        {{ job.description }}
+                    </p>
+                </div>
+                <div class="location text-uppercase font-weight-bold m-3">
+                    <i class="bi bi-geo-fill mr-4"></i>
+                    <span>{{ job.job_location }}</span>
+                </div>
+                <div class="contract text-uppercase font-weight-bold m-3">
+                    <i class="bi bi-calendar-check mr-4"></i>
+                    <span>{{ job.job_contract }}</span>
+                </div>
+                <div class="schedule text-uppercase font-weight-bold m-3">
+                    <i class="bi bi-clock-history mr-4"></i>
+                    <span>{{ job.job_schedule }}</span>
+                </div>
+            </div>
+            <div class="text-center m-5">
+                <a href="" class="popup_btn bg-blue dark-text text-uppercase">Find out More</a>
+            </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+    </div>
+</section>
+
+{% endblock %}

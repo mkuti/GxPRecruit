@@ -16,8 +16,9 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "django_filters",
     "core",
-    # Add here your new common apps for both dev and prod
+    "jobs",
 ]
 
 MIDDLEWARE = [

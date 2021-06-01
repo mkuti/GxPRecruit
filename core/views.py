@@ -1,11 +1,13 @@
 from django.shortcuts import render
+from jobs.filters import JobFilter
+from jobs.models import Job
 
 
 def home(request):
-    """
-    This is a starting, dummy view pointing to the base template.
-    Please modify it to your own needs and return your extending
-    template instead, currently inexistent.
-    """
+    '''A view that displays the home page with a search bar'''
+    jobs = Job.objects.all()
+    for job in jobs:
+        print(job.job_location)
+    filtered_jobs = JobFilter(request.GET, queryset=jobs)
 
-    return render(request, "base.html")
+    return render(request, 'home.html', {'filter': filtered_jobs})
