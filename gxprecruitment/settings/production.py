@@ -3,7 +3,7 @@ import os
 import dj_database_url
 
 # Import below from the common config as needed, and append to the list (+=)
-from boilerplate.settings.common import INSTALLED_APPS
+from gxprecruitment.settings.common import INSTALLED_APPS
 
 DEBUG = False
 

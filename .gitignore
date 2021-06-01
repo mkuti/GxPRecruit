@@ -142,8 +142,8 @@ cython_debug/
 
 # Env & Dep ex pipenv
 .vscode
-boilerplate/.env
-boilerplate/settings/development.py
+gxprecruitment/.env
+gxprecruitment/settings/development.py
 # requirements.txt
 
 # Media and Static (if to be served from AWS)

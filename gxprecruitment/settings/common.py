@@ -30,7 +30,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-ROOT_URLCONF = "boilerplate.urls"
+ROOT_URLCONF = "gxprecruitment.urls"
 
 TEMPLATES = [
     {
@@ -49,7 +49,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "boilerplate.wsgi.application"
+WSGI_APPLICATION = "gxprecruitment.wsgi.application"
 
 AUTH_PASSWORD_VALIDATORS = [
     {

@@ -1,1 +1,1 @@
-web: gunicorn boilerplate.wsgi:application
+web: gunicorn gxprecruitment.wsgi:application
