@@ -1,6 +1,21 @@
-<!-- Your navbar here -->
-<!--Dummy navbar-->
-<nav class="navbar navbar-dark bg-info">
-    <a class="navbar-brand" href="#">Your Navbar</a>
-</nav>
-<!--End Dummy navbar-->
+{% block nav %}
+{% load static %}
+
+<div class="topnav" id="myTopnav">
+    <a class="logo" href="{% url 'home' %}">
+        <img class="logo-mobile" src="{% static 'images/logo-mobile.png' %}" alt="logo"/>
+        <img class="logo-desktop" src="{% static 'images/GxP-LinkedIn-Cover-Dark01.png' %}" alt="logo"/>
+    </a>
+    <div class="nav-container">
+        <div class="nav-items">
+            <a href="{% url 'home' %}">Home</a>
+            <a class="scrollTo" href="#jobs">Current jobs</a>
+            <a id="goToTeam" href="">Our team</a>
+            <a class="scrollTo" href="#footer">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="respNav()">
+                <i class="bi bi-list"></i>
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}

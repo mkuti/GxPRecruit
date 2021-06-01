@@ -1,11 +1,32 @@
-<!-- Your footer here -->
-<!--Dummy navbar-->
-<footer class="footer bg-info text-light text-center fixed-bottom">
-    <div class="container my-3">
-        <p>Place sticky footer content here</p>
-        <small>Created by <a style="color:#183438; font-weight:bold;"
-                href="https://github.com/GBrachetta">Guillermo Brachetta</a>.
-            Free to use and distribute.</small>
+{% block footer %}
+{% load static %}
+
+<footer class="mt-5" id="footer">
+    <div class="container-fluid bg-grey">
+        <div class="row py-4 footer-row text-center bg-dark light-text">
+            <div class="col-12 footer-contact text-center d-sm-flex">
+                <h3 class="text-uppercase">to Contact us:</h3>
+            </div>
+            <div class="col-12 footer-contact d-sm-flex">
+                <p>083 103 0658</p>
+            </div>
+            <div class="col-12 footer-contact d-sm-flex">
+                <p>victoria@gxprecruitment.ie</p>
+            </div>
+            <div class="col-12 footer-contact d-sm-flex">
+                <a class="socialmedia" href="https://www.facebook.com/GxPRecruitmentTeam" target="_blank">
+                    <i class="bi bi-facebook"></i>
+                    <span class="sr-only">Facebook</span>
+                </a>
+            </div>
+            <div class="col-12 footer-contact d-sm-flex">
+                <a class="socialmedia" href="https://www.linkedin.com/company/gxp-recruitment/" target="_blank">
+                    <i class="bi bi-linkedin"></i>
+                    <span class="sr-only">Linkedin</span>
+                </a>
+            </div>
+        </div>
     </div>
 </footer>
-<!--End Dummy navbar-->
+
+{% endblock %}
