@@ -37,10 +37,10 @@ if "USE_AWS" in os.environ:
         "Expires": "Thu, 31 Dec 2099 20:00:00 GMT",
         "CacheControl": "max-age=94608000",
     }
-    AWS_STORAGE_BUCKET_NAME = "your-aws-bucket-name"
+    AWS_STORAGE_BUCKET_NAME = "gxprecruit"
     AWS_S3_FILE_OVERWRITE = False
     AWS_DEFAULT_ACL = None
-    AWS_S3_REGION_NAME = "eu-central-1"
+    AWS_S3_REGION_NAME = "eu-west-1"
     AWS_ACCESS_KEY_ID = os.environ.get(
         "AWS_ACCESS_KEY_ID"
     )  # nopep8  # Add env variable in Heroku
