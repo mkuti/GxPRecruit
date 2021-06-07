@@ -1,5 +1,6 @@
 {% block nav %}
 {% load static %}
+{% load admin_urls %}
 
 <div class="topnav" id="myTopnav">
     <a class="logo" href="{% url 'home' %}">
@@ -10,8 +11,9 @@
         <div class="nav-items">
             <a href="{% url 'home' %}">Home</a>
             <a class="scrollTo" href="#jobs">Current jobs</a>
-            <a id="goToTeam" href="">Our team</a>
+            <a class="scrollTo" href="#team">Our team</a>
             <a class="scrollTo" href="#footer">Contact</a>
+            <a href="">Admin login</a>
             <a href="javascript:void(0);" class="icon" onclick="respNav()">
                 <i class="bi bi-list"></i>
             </a>
