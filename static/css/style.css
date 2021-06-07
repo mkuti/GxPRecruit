@@ -42,6 +42,11 @@ body {
   color: #f9f9f9;
 }
 
+.section-title {
+  font-family: "Source Code Pro", sans-serif;
+  text-decoration: underline;
+}
+
 /* logo */
 .logo-mobile {
   height: 20rem;
