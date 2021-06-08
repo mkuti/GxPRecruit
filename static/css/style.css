@@ -199,6 +199,12 @@ body {
   color: #04bbc9;
 }
 
+.round_card {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+}
+
 /* footer */
 .footer-contact {
     -webkit-box-align: center;
