@@ -63,7 +63,7 @@ body {
   border: 0.1rem solid #f9f9f9;;
 }
 
-.popup_btn:hover {
+.popup-btn:hover {
   text-decoration: none;
   background-color: #111820;
   color: #04bbc9;
@@ -169,6 +169,11 @@ body {
   letter-spacing: 0.2rem;
 }
 
+/* jobs */
+.jobs-section {
+  height: 65vh;
+}
+
 .job-search {
   width: 15rem;
   height: auto;
@@ -210,13 +215,13 @@ body {
   border-radius: 5%;
 }
 
-.team-container .header_container {
+.team-container .header-container {
   position: relative;
   z-index: 1;
   margin-bottom: -3rem;
 }
 
-.team-container .round_card {
+.team-container .staff-photo {
   position: relative;
   z-index: -1;
 }
