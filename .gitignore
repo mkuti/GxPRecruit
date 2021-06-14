@@ -147,6 +147,5 @@ gxprecruitment/settings/development.py
 # requirements.txt
 
 # Media and Static (if to be served from AWS)
-static/
 media
 *.png
