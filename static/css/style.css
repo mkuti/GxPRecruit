@@ -239,7 +239,12 @@ body {
     ),
     url(../images/victoria.png);
   background-size: cover;
-  background-position: top;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.quote {
+  font-size: 1.5rem;
 }
 
 /* footer */
