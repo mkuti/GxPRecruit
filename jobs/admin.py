@@ -1,12 +1,12 @@
 from django.contrib import admin
 
-from .models import Contract, Job, Location, Schedule
+from .models import Job
 
 # Register your models here.
-admin.site.register(Job)
-admin.site.register(Contract)
-admin.site.register(Schedule)
-admin.site.register(Location)
+@admin.register(Job)
+class JobAdmin(admin.ModelAdmin):
+    fields = ['title', 'description', ('location','contract', 'schedule')]
+
 
 admin.site.index_title = "GXP Admin"
 admin.site.site_header = "Admin for GXP Recruitment"
