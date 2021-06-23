@@ -19,7 +19,7 @@
     
         {% for job in jobs %}
         {% if forloop.counter|divisibleby:2 %}
-        <div class="col-12 col-sm-8 col-md-6 col-lg-4 col-xl-3 jobs-container white-box dark-text">
+        <div class="col-12 col-sm-8 col-md-6 col-lg-4 jobs-container white-box dark-text">
             <h3 class="job-header m-3"><u>{{ job.title}}</u></h3>
             <div class="job-specifics m-3">
                 <div class="description text-justify m-2">
@@ -40,15 +40,15 @@
                     <span>{{ job.schedule }}</span>
                 </div>
             </div>
-            <div class="text-center m-5">
+            <div class="text-center my-5">
                 <a href="" class="popup-btn bg-blue dark-text text-uppercase">Find out More</a>
             </div>
         </div>
         {% else %}
-        <div class="col-12 col-sm-8 col-md-6 col-lg-4 col-xl-3 jobs-container dark-box bg-dark light-text">
+        <div class="col-12 col-sm-8 col-md-6 col-lg-4 jobs-container dark-box bg-dark light-text">
             <h3 class="job-header m-3"><u>{{ job.title}}</u></h3>
             <div class="job-specifics m-3">
-                <div class="description text-justify m-2">
+                <div class="description text-justify m-3">
                     <p>
                         {{ job.description }}
                     </p>
@@ -66,7 +66,7 @@
                     <span>{{ job.schedule }}</span>
                 </div>
             </div>
-            <div class="text-center m-5">
+            <div class="text-center my-5">
                 <a href="" class="popup-btn bg-blue dark-text text-uppercase">Find out More</a>
             </div>
         </div>

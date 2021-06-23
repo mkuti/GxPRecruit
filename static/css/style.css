@@ -63,7 +63,6 @@ body {
   border: 0.1rem solid #f9f9f9;
   position: absolute;
   bottom: 0;
-  margin: 2rem 0;
 }
 
 .popup-btn:hover {
@@ -194,7 +193,7 @@ body {
   font-weight: 500;
   margin: 2rem;
   padding: 1.5rem;
-  width: 20rem;
+  width: 30rem;
   height: auto;
   border-radius: 1rem;
 }
