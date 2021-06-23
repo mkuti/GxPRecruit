@@ -155,12 +155,12 @@ body {
 }
 
 .slogan {
-  width: 25rem;
+  width: 18rem;
   height: auto;
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 60%;
-  transform: translate(-40%, -50%);
+  transform: translate(-40%, -40%);
   text-align: center;
 }
 
@@ -284,7 +284,7 @@ body {
 
 @media (min-width: 370px) {
   .slogan {
-    width: 250px;
+    width: 25rem;
   }
 }
 
@@ -296,25 +296,25 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    height: 200px;
+    height: 20rem;
     width: 100%;
   }
   .slogan {
-    width: 300px;
+    width: 30rem;
   }
 }
 @media (min-width: 900px) {
     .logo-desktop {
-      width: 900px;
+      width: 90rem;
       position: absolute;
       left: 50%;
-      margin-left: -450px;
+      margin-left: -45rem;
     }
     .nav-container {
-      width: 900px;
+      width: 90rem;
       position: absolute;
       left: 50%;
-      margin-left: -450px;
+      margin-left: -45rem;
       top: 200px;
     }
     .nav-items {
