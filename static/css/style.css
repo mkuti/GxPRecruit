@@ -302,6 +302,10 @@ body {
   .slogan {
     width: 30rem;
   }
+  .staff-photo {
+    width: 30rem;
+    height: 30rem;
+  }
 }
 @media (min-width: 900px) {
     .logo-desktop {
@@ -326,9 +330,5 @@ body {
     }
     #myTopnav a.icon {
     display: none;
-  }
-  .staff-photo {
-    width: 30rem;
-    height: 30rem;
   }
 }
