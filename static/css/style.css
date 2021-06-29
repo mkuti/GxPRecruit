@@ -308,7 +308,7 @@ body {
     height: 30rem;
   }
 }
-@media (min-width: 900px) {
+@media (min-width: 992px) {
   .logo-desktop {
       width: 90rem;
       position: absolute;
@@ -332,9 +332,6 @@ body {
   #myTopnav a.icon {
     display: none;
   }
-}
-
-@media (min-width: 990px) {
   .description {
     height: 55%;
   }
