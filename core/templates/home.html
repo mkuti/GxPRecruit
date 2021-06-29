@@ -20,7 +20,7 @@
         {% for job in jobs %}
         {% if forloop.counter|divisibleby:2 %}
         <div class="col-12 col-sm-8 col-md-6 col-lg-4 jobs-container white-box dark-text">
-            <h3 class="job-header m-3"><u>{{ job.title}}</u></h3>
+            <h3 class="job-header m-5"><u>{{ job.title}}</u></h3>
             <div class="job-specifics m-3">
                 <div class="description text-justify m-2">
                     <p>
@@ -39,14 +39,14 @@
                     <i class="bi bi-clock-history mr-4"></i>
                     <span>{{ job.schedule }}</span>
                 </div>
-            </div>
-            <div class="text-center m-5">
-                <a href="{{ job.url }}" class="popup-btn bg-blue dark-text text-uppercase" target="_blank">Find out More</a>
+                <div class="text-center m-5">
+                    <a href="{{ job.url }}" class="popup-btn bg-blue dark-text text-uppercase" target="_blank">Find out More</a>
+                </div>
             </div>
         </div>
         {% else %}
         <div class="col-12 col-sm-8 col-md-6 col-lg-4 jobs-container dark-box bg-dark light-text">
-            <h3 class="job-header m-3"><u>{{ job.title}}</u></h3>
+            <h3 class="job-header m-5"><u>{{ job.title}}</u></h3>
             <div class="job-specifics m-3">
                 <div class="description text-justify m-3">
                     <p>
@@ -65,9 +65,9 @@
                     <i class="bi bi-clock-history mr-4"></i>
                     <span>{{ job.schedule }}</span>
                 </div>
-            </div>
-            <div class="text-center m-5">
-                <a href="{{ job.url }}" class="popup-btn bg-blue dark-text text-uppercase" target="_blank">Find out More</a>
+                <div class="text-center m-5">
+                    <a href="{{ job.url }}" class="popup-btn bg-blue dark-text text-uppercase" target="_blank">Find out More</a>
+                </div>
             </div>
         </div>
         {% endif %}

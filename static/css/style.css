@@ -186,6 +186,8 @@ body {
 }
 
 .jobs-container {
+  display: flex;
+  flex-direction: column;
   position: relative;
   font-family: "Source Code Pro", sans-serif;
   font-weight: 500;
@@ -202,6 +204,7 @@ body {
 }
 
 .job-specifics {
+  height: 100%;
   font-size: 1.5rem;
 }
 
@@ -306,27 +309,33 @@ body {
   }
 }
 @media (min-width: 900px) {
-    .logo-desktop {
+  .logo-desktop {
       width: 90rem;
       position: absolute;
       left: 50%;
       margin-left: -45rem;
-    }
-    .nav-container {
+  }
+  .nav-container {
       width: 90rem;
       position: absolute;
       left: 50%;
       margin-left: -45rem;
       top: 200px;
-    }
-    .nav-items {
+  }
+  .nav-items {
       margin: auto;
       width: 60%;
-    }
-    #myTopnav a {
+  }
+  #myTopnav a {
       display: block;
-    }
-    #myTopnav a.icon {
+  }
+  #myTopnav a.icon {
     display: none;
+  }
+}
+
+@media (min-width: 990px) {
+  .description {
+    height: 55%;
   }
 }
