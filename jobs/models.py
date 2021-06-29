@@ -8,6 +8,7 @@ class Job(models.Model):
     contract = models.CharField(max_length=40, default='')
     location = models.CharField(max_length=40, default='')
     schedule = models.CharField(max_length=40, default='')
+    url = models.CharField(max_length=40, default='')
 
     def __str__(self):
         return self.title
