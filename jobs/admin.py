@@ -5,7 +5,7 @@ from .models import Job
 # Register your models here.
 @admin.register(Job)
 class JobAdmin(admin.ModelAdmin):
-    fields = ['title', 'description', ('location','contract', 'schedule')]
+    fields = ['title', 'description', ('location','contract', 'schedule'), 'url']
 
 
 admin.site.index_title = "GXP Admin"
