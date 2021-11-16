@@ -7,7 +7,10 @@ from gxprecruitment.settings.common import INSTALLED_APPS
 
 DEBUG = False
 
-ALLOWED_HOSTS = [os.environ.get("DOMAIN_NAME")]  # Add env variable in Heroku
+ALLOWED_HOSTS = [
+    os.environ.get("DOMAIN_NAME"),
+    "www.gxprecruitment.ie"
+]
 
 INSTALLED_APPS += [
     # Add here your new apps for prod only
